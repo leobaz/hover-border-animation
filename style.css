@@ -1,0 +1,68 @@
+body {
+    background: #262626;
+}
+.wrapper {
+    text-align: center;
+    margin: 15% auto;
+}
+button {
+    color: #fff;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 16px;
+    padding: 16px 32px;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+button:before, button:after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.social-media {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+}
+.social-media i {
+    font-size: 35px;
+}
+.social-media:hover {
+    color: #fff;
+}
+.social-media:before, .social-media:after {
+    top: 0;
+    left: 0;
+}
+.social-media:before {
+    border: 2px solid transparent;
+}
+.social-media:hover:before {
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+.social-media:after {
+    border: 0px solid transparent;
+}
+.social-media:hover:after {
+    border-top: 2px solid #fff;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+}
+.circles {
+    border-radius: 100%;
+    box-shadow: none;
+}
+.circles:before, .circles:after {
+    border-radius: 100%;
+}
